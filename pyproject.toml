@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 88
+target-version = ['py38']
+exclude = '''
+/(
+  \.(eggs|git|hg|mypy_cache|nox|tox|venv)|
+  build
+)/
+'''
+
+[tool.isort]
+profile = "black"
